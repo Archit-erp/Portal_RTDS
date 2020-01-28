@@ -15,7 +15,9 @@ $password=$_POST['ConfirmPassword'];
 
 if(empty($email || $password))
 {
-    echo '<script type="text/javascript">alert("Can't Connect, Redirecting..")</script>';
+    echo '<script language="javascript">';
+    echo 'alert("Cant Connect, Redirecting..")';
+    echo '</script>';
     header ('Location : 35.238.89.60/Portal_RTDS/index.html');
 }
 
