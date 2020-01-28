@@ -3,7 +3,7 @@
    <head> 
 	</head> 
 	<body> 
-			   <form action="/https://rtcs1234.000webhostapp.com/public_html/register.php" onsubmit="validate()" method="post">
+			   <form onsubmit="return validate()" method="post" action="35.238.89.60/Portal_RTDS/register.php">
 			   First Name:<br>
 			  <input type="text" id="fname" name="first name" placeholder="First Name">
 			  <br>
@@ -105,11 +105,17 @@
 						f=1;
 						pass.focus();
 						
+						
 					}
 					 if(f==0)
 					 {
 					 alert('Adding to the Database');
+					 return true;
+					 
 					 }
+					 
+					 else
+					 return false;
 				        //Comment for git
 					 }
 			
