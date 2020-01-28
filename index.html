@@ -34,35 +34,35 @@
 			  </form>
 				
 			<script>
+				function gen() {
+						if(document.getElementById('r1').checked)
+							g= document.getElementById('r1').value;
+			
+			
+						else if(document.getElementById('r2').checked)
+							g= document.getElementById('r2').value;
+			
+			
+						else if(document.getElementById('r3').checked)
+							g= document.getElementById('r3').value;
+						}
+				
 				function validate(){
 				var g;
 				var f=0;
 				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 				var phoneno = /^[6-9]\d{9}$/;
 				var blank =  /^\w+[a-zA-Z]*$/;
-				return gen();
+				gen();
 				
 							var fn = document.getElementById('fname').value;
 							var ln = document.getElementById('lname').value;
 							var em = document.getElementById('email').value;
 							var ag = document.getElementById('Age').value;
-							var mob =  document.getElementById('mob').value;
+							var mob1 =  document.getElementById('mob').value;
 							var p = document.getElementById('pass').value;
 							var cp = document.getElementById('cpass').value;
-							var button = document.getElementById('sub').value;
-			
-					function gen() {
-								if(document.getElementById('r1').checked)
-										g= document.getElementById('r1').value;
-			
-			
-								else if(document.getElementById('r2').checked)
-										g= document.getElementById('r2').value;
-			
-			
-								else if(document.getElementById('r3').checked)
-										g= document.getElementById('r3').value;
-									}
+							
 					/*console.log(fn);
 					console.log(ln);
 					console.log(em);
@@ -76,7 +76,7 @@
 						alert('Name should only be in Characters');
 						f=1;
 						fname.focus();
-						return false;
+						
 					}
 					
 					if(!em.match(filter))
@@ -84,6 +84,7 @@
 						alert('Please Provide Valid Email ID');
 						f=1;
 						email.focus();
+						
 					}
 					
 					if(ag<18 || ag>60)
@@ -91,11 +92,11 @@
 						alert('Age Out Of Bound(18-60)');
 						f=1;
 						Age.focus();
+						
 					}
 					
-					if(!mob.match(phoneno))
+					else if(!mob1.match(phoneno))
 					{
-					
 						alert('Please Enter Valid Mobile No');
 						f=1;
 						mob.focus();
@@ -106,10 +107,9 @@
 						alert('Password does not match');
 						f=1;
 						pass.focus();
-						
-						
 					}
-					 if(f==0)
+					
+					if(f==0)
 					 {
 					 alert('Adding to the Database');
 					 return true;
