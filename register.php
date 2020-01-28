@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-nam<?php
-=======
-
 <?php
->>>>>>> 2707243273d96500f73d9c91d0f2ed52eca14009
+
 $servername = "35.238.89.60";
 $username = "test_userr";
 $passwordd = "Password@123";                                                                                                                                                      
@@ -16,10 +12,9 @@ $age=$_POST['age'];
 $gender=$_POST['gender'];
 $mobile=$_POST['MobileNo'];
 $password=$_POST['ConfirmPassword'];
-<<<<<<< HEAD
 
-=======
->>>>>>> 2707243273d96500f73d9c91d0f2ed52eca14009
+
+
 // Create connection
 $conn = new mysqli($servername, $username, $passwordd, $dbname);
 // Check connection
