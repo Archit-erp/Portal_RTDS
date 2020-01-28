@@ -39,6 +39,7 @@
 				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 				var phoneno = /^[6-9]\d{9}$/;
 				var blank =  /^\w+[a-zA-Z]*$/;
+				var regpass = /^.{4,20}$/;
 				
 				
 							var fn = document.getElementById('fname').value;
@@ -76,7 +77,6 @@
 					else if(ag<18 || ag>60)
 					{
 						alert('Age Out Of Bound(18-60)');
-						f=1;
 						Age.focus();
 						return false;
 					}
@@ -84,15 +84,21 @@
 					else if(!mob1.match(phoneno))
 					{
 						alert('Please Enter Valid Mobile No');
-						f=1;
 						mob.focus();
 						return false;
+					}
+					
+					else if(!regpass.match(pass))
+					{
+						alert("Password minimum length(5 chars)");
+							pass.focus();
+							return true;
+					
 					}
 					
 					else if(!p.match(cp))
 					{
 						alert('Password does not match');
-						f=1;
 						pass.focus();
 						return false;
 					}
