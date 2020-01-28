@@ -19,6 +19,7 @@ if(isset($email || $password))
     header ('url : http://35.238.89.60/Portal_RTDS/index.html');
 }
 
+else{
 // Create connection
 $conn = new mysqli($servername, $username, $passwordd, $dbname);
 // Check connection
@@ -32,5 +33,5 @@ if (mysqli_query($conn, $sql)) {
 } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-}
+}}
 ?>
