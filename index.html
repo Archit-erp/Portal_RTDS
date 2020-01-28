@@ -35,7 +35,8 @@
 				
 			<script>
 				function validate(){
-				var g, f=0;
+				var g;
+				var f=0;
 				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 				var phoneno = /^[6-9]\d{9}$/;
 				var blank =  /^\w+[a-zA-Z]*$/;
@@ -115,8 +116,10 @@
 					 }
 					 
 					 else
+					 {
+					alert('Return');
 					 return false;
-				        //Comment for git
+				     
 					 }
 			
 			
