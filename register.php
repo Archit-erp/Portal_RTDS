@@ -13,10 +13,10 @@ $gender=$_POST['gender'];
 $mobile=$_POST['MobileNo'];
 $password=$_POST['ConfirmPassword'];
 
-if(isset($email || $password))
+if(empty($email || $password))
 {
-    echo alert("Can't Connect, Redirecting..");
-    header ('url : 35.238.89.60/Portal_RTDS/index.html');
+    echo '<script type="text/javascript">alert("Can't Connect, Redirecting..")</script>';
+    header ('Location : 35.238.89.60/Portal_RTDS/index.html');
 }
 
 else{
