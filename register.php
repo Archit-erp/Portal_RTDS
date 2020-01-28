@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "id12328517_rtcs1234";
-$password = "Archit@123";                                                                                                                                                      
-$dbname = "id12328517_rtcs1234";
+$servername = "http://35.238.89.60/";
+$username = "test_userr";
+$password = "Password@123";                                                                                                                                                      
+$dbname = "user";
 
 $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
