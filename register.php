@@ -1,16 +1,17 @@
-<?php
+nam<?php
 $servername = "35.238.89.60";
 $username = "test_userr";
 $passwordd = "Password@123";                                                                                                                                                      
 $dbname = "user";
 
 $firstname=$_POST['firstname'];
-$lastname=$_POST['lastname'];
-$email=$_POST['email'];
+$lastname=$_POST['Lastname'];
+$email=$_POST['Email'];
 $age=$_POST['age'];
+//$age=int($age);
 $gender=$_POST['gender'];
-$mobile=$_POST['mobile'];
-$password=$_POST['password'];
+$mobile=$_POST['MobileNo'];
+$password=$_POST['ConfirmPassword'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $passwordd, $dbname);
@@ -21,7 +22,7 @@ if ($conn->connect_error) {
 }
 
 else
-{$sql = ("INSERT INTO user1 (firstname, lastname, email, age, mobile, gender, password) VALUES ('$firstname','$lastname','$email','$age','$gender','$mobile','$passwordd')");
+{$sql = ("INSERT INTO user1 (firstname, lastname, email, age, mobile, gender, password) VALUES ('$firstname','$lastname','$email','$age','$mobile','$gender','$password')");
 if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
 } else {
