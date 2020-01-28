@@ -48,6 +48,7 @@
 							var mob1 =  document.getElementById('mob').value;
 							var p = document.getElementById('pass').value;
 							var cp = document.getElementById('cpass').value;
+					{
 							if(document.getElementById('r1').checked)
 								g= document.getElementById('r1').value;
 			
@@ -57,7 +58,7 @@
 			
 							else if(document.getElementById('r3').checked)
 								g= document.getElementById('r3').value;
-					
+					}
 					if(!fn.match(blank))
 					{
 						alert('Name should only be in Characters');
