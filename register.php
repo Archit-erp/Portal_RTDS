@@ -16,7 +16,7 @@ $password=$_POST['ConfirmPassword'];
 if(isset($email || $password))
 {
     echo alert("Can't Connect, Redirecting..");
-    header ('url : http://35.238.89.60/Portal_RTDS/index.html');
+    header ('url : 35.238.89.60/Portal_RTDS/index.html');
 }
 
 else{
