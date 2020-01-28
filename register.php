@@ -13,10 +13,10 @@ $gender=$_POST['gender'];
 $mobile=$_POST['MobileNo'];
 $password=$_POST['ConfirmPassword'];
 
-if(empty($email || $password))
+if(isset($email || $password))
 {
     echo alert("Can't Connect, Redirecting..");
-    header ("url : http://35.238.89.60/Portal_RTDS/index.html");
+    header ('url : http://35.238.89.60/Portal_RTDS/index.html');
 }
 
 // Create connection
