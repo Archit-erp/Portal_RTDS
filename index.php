@@ -78,7 +78,7 @@
 				jQuery.ajax({
 					url: "35.238.89.60/Portal_RTDS/register.php",
 					data: 'email='+$("#email").val(),
-					data2: 'flag='+$("flag").val(1);
+					data2: 'flag='+$("flag").val(1),
 					type : "POST",
 					success:function(data){
 					$("#statusCheck").html(data);
