@@ -9,7 +9,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head> 
 	<body> 
-			
+		<div class = "page">
 			<div class = "container">
 			<br>
 				<h1 class="text-center" id="h1"> Create Your Account!</h1>
@@ -67,7 +67,8 @@
 									 </center>
 							</form>
 			
-			</div>				
+			</div>		
+		</div>
 							
 			<script>
 				function validate(){
