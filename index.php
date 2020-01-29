@@ -73,6 +73,7 @@
 							
 			<script>
 				function checkEmail(){
+					console.log('Enter');
 					var flag;
 				jQuery.ajax({
 					url: "35.238.89.60/Portal_RTDS/register.php",
@@ -85,6 +86,7 @@
 					    error:function(){}
 				});
 				}
+				console.log('exit');
 				}
 				
 				function validate(){
