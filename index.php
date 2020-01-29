@@ -85,7 +85,7 @@
 				},
 					    error:function(){}
 				});
-				}
+				
 				console.log('exit');
 				}
 				
