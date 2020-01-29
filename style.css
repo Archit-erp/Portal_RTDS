@@ -4,6 +4,7 @@ background-color : #B3B6B7 ;
 .container{
 background-color : #7B7D7D  ;
 margin-top: 40px;
+border-radius : 4px;
 }
 #space{
 	margin-bottom : 10px;;
