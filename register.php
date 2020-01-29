@@ -24,9 +24,9 @@ else if(!empty($flag))
          $result = $conn->query("SELECT * FROM user1 WHERE email='".$email."'");
            $rowcount = $result->num_rows;
                 if($rowcount>0){
-                   echo "<span>Email Already Exist!</span>" ;}
+                   echo "<span class='status-not-available'>Email Already Exist!</span>" ;}
                 else{
-                    echo "<span>Email Available</span>";}
+                    echo "<span class='status-available'>Email Available</span>";}
 }
 
 else{
