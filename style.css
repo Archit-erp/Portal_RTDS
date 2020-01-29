@@ -1,3 +1,6 @@
+.container{
+background-color : #E5E7E9 ;
+}
 #space{
 	margin-bottom : 10px;;
 }
@@ -12,9 +15,4 @@
 #h2{
 	
 	font-size : 25px;
-}
-
-.card bg-secondary text-white{
-	
-	border-radius : 6px;
 }
