@@ -36,12 +36,12 @@
 									<div class="col-sm-6" id="space"><input class="form-control" type="text" id="mob" name="MobileNo" maxlength="10" placeholder="Mobile No" required></div>
 								</div>
 								<div class="row">
-									<div class="col-sm-12"  ><label>Email</label></div>
+									<div class="col-sm-12"><label>Email</label></div>
 								</div>
 								<div class="row">
-									<div class="col-sm-12" id="space"><input class="form-control" type="email" id="email" name="Email" placeholder="Email" required></div>
+									<div class="col-sm-12" id="space"><input class="form-control" type="email" id="email" onBlur="checkEmail()" name="Email" placeholder="Email" required></div>
 								</div>
-									
+								<span id="statusCheck"></span>
 								<div class="row">
 									<div class="col-sm-12"><label>Gender</label></div>
 								</div>
@@ -71,6 +71,21 @@
 		</div>
 							
 			<script>
+				function checkEmail(){
+				jQuery.ajax({
+					url: "35.238.89.60/Portal_RTDS/register.php",
+					data: 'email='+$("#email").val()
+					type : "POST",
+					success:function(data){
+					$("#statusCheck").html(data)
+				},
+					    error:function(){}
+				});}
+					
+					
+				
+				
+				}
 				function validate(){
 				var g;
 				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
