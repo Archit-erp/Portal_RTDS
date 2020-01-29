@@ -1,4 +1,4 @@
-.body{
+.page{
 background-color : #B3B6B7 ;
 }
 .container{
@@ -7,6 +7,7 @@ margin: 40px 900px 0 400px;
 border-radius : 13px;
 padding-bottom : 70px;
 }
+
 #space{
 	margin-bottom : 10px;;
 }
