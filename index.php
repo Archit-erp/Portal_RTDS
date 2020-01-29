@@ -5,19 +5,19 @@
 	<body> 
 			   <form onsubmit="return validate();" method="post" action="register.php">
 			   First Name:<br>
-			  <input type="text" id="fname" name="firstname" placeholder="First Name">
+			  <input type="text" id="fname" name="firstname" placeholder="First Name" required>
 			  <br>
 			   Last Name:<br>
 			  <input type="text" id="lname" name="Lastname" placeholder="Last Name">
 			  <br>
 			   Email:<br>
-			  <input type="email" id="email" name="Email" placeholder="Email">
+			  <input type="email" id="email" name="Email" placeholder="Email" required>
 			  <br>
 			  Age:<br>
-			  <input type="number" id="Age" name="age" placeholder="Age">
+			  <input type="number" id="Age" name="age" placeholder="Age" required>
 			  <br>
 			  Mobile:<br>
-			  <input type="text" id="mob" name="MobileNo" maxlength="10" placeholder="Mobile No">`
+			  <input type="text" id="mob" name="MobileNo" maxlength="10" placeholder="Mobile No" required>
  			  <br><br>
 			  Gender:<br>
 			  
