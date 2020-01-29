@@ -1,8 +1,6 @@
-.page{
-background-color : #B3B6B7 ;
-}
+
 .container{
-background-color : #979A9A ;
+border-style : solid 2px;
 margin: 40px 900px 0 400px;
 border-radius : 13px;
 padding-bottom : 70px;
