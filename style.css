@@ -1,0 +1,20 @@
+#space{
+	margin-bottom : 10px;;
+}
+
+#marg{
+	margin-left: 15px;
+}
+#h1{
+	
+	font-size : 45px;
+}
+#h2{
+	
+	font-size : 25px;
+}
+
+.card bg-secondary text-white{
+	
+	border-radius : 6px;
+}
