@@ -39,9 +39,10 @@
 									<div class="col-sm-12"><label>Email</label></div>
 								</div>
 								<div class="row">
-									<div class="col-sm-12" id="space"><input class="form-control" type="email" id="email" onBlur="checkEmail()" name="Email" placeholder="Email" required></div>
+									<div class="col-sm-10" id="space"><input class="form-control" type="email" id="email" onBlur="checkEmail()" name="Email" placeholder="Email" required></div>
+									<div class="col-sm-2"><span id="statusCheck"></span></div>
 								</div>
-								<span id="statusCheck"></span>
+								
 								<div class="row">
 									<div class="col-sm-12"><label>Gender</label></div>
 								</div>
