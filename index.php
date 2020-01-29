@@ -27,9 +27,9 @@
 			
 			  <br>
 			  Password:<br>
-			  <input type="password" id="pass" name="Password" placeholder="Set a Password"><br>
+			  <input type="password" id="pass" name="Password" placeholder="Set a Password" required><br>
 			  Confirm Password:<br>
-			  <input type="password" id="cpass" name="ConfirmPassword" placeholder="Confirm Password"><br><br><br>
+			  <input type="password" id="cpass" name="ConfirmPassword" placeholder="Confirm Password" required><br><br><br>
 			  <input type="submit" id="sub" value="Submit">
 			  </form>
 				
