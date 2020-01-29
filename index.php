@@ -1,38 +1,74 @@
 <!DOCTYPE HTML> 
 <html>  
    <head> 
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head> 
 	<body> 
-			   <form onsubmit="return validate();" method="post" action="register.php">
-			   First Name:<br>
-			  <input type="text" id="fname" name="firstname" placeholder="First Name" required>
-			  <br>
-			   Last Name:<br>
-			  <input type="text" id="lname" name="Lastname" placeholder="Last Name">
-			  <br>
-			   Email:<br>
-			  <input type="email" id="email" name="Email" placeholder="Email" required>
-			  <br>
-			  Age:<br>
-			  <input type="number" id="Age" name="age" placeholder="Age" required>
-			  <br>
-			  Mobile:<br>
-			  <input type="text" id="mob" name="MobileNo" maxlength="10" placeholder="Mobile No" required>
- 			  <br><br>
-			  Gender:<br>
-			  
-			  <input type="radio" id="r1" name="gender" value="male" checked> Male<br>
-			  <input type="radio" id="r2" name="gender" value="female"> Female<br>
-			  <input type="radio" id="r3" name="gender" value="other"> Other 
 			
-			  <br>
-			  Password:<br>
-			  <input type="password" id="pass" name="Password" placeholder="Set a Password" required><br>
-			  Confirm Password:<br>
-			  <input type="password" id="cpass" name="ConfirmPassword" placeholder="Confirm Password" required><br><br><br>
-			  <input type="submit" id="sub" value="Submit">
-			  </form>
-				
+			<div class = "container">
+			<br>
+				<h1 class="text-center" id="h1"> Create Your Account!</h1>
+		
+				<h4 class="text-center" id="h2"> Fill out the form to signup.</h4>
+				<br>
+					
+							<form onsubmit="return validate();" method="post" action="register.php">
+								<div class="row">
+									<div class="col-sm-6"><label>First Name</label></div>
+									<div class="col-sm-6"><label>Last Name</label></div>
+								</div>
+								<div class="row">	
+									<div class="col-sm-6" id="space"><input class="form-control" type="text" id="fname" name="firstname" placeholder="First Name" required></div>
+									<div class="col-sm-6" id="space"><input class="form-control" type="text" id="lname" name="Lastname" placeholder="Last Name"></div>
+									<br>
+								</div>
+								<div class="row">
+									<div class="col-sm-6"  ><label>Age</label></div>
+									<div class="col-sm-6"  ><label>Mobile</label></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6" id="space"><input class="form-control" type="number" id="Age" name="age" placeholder="Age" required></div>
+									<div class="col-sm-6" id="space"><input class="form-control" type="text" id="mob" name="MobileNo" maxlength="10" placeholder="Mobile No" required></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12"  ><label>Email</label></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12" id="space"><input class="form-control" type="email" id="email" name="Email" placeholder="Email" required></div>
+								</div>
+									
+								<div class="row">
+									<div class="col-sm-12"><label>Gender</label></div>
+								</div>
+						  
+								<div class="row">
+										<input id="marg" type="radio" id="r1" name="gender" value="male" checked> Male<br>
+										<input id="marg"type="radio" id="r2" name="gender" value="female"> Female<br>
+										<input id="marg" id="space" type="radio" id="r3" name="gender" value="other"> Other 
+								</div>
+								
+								<div class="row">
+								<div class="col-sm-6"><label>Password</label></div>
+								<div class="col-sm-6"><label>Confirm Password</label></div>
+								</div>
+								
+								<div class="row">
+									<div class="col-sm-6"><input class="form-control" type="password" id="pass" name="Password" placeholder="Set a Password" required><br></div>
+									<div class="col-sm-6"><input class="form-control" type="password" id="cpass" name="ConfirmPassword" placeholder="Confirm Password" required></div>
+								</div>
+									 <br>
+									 <center>
+									  <input type="submit" id="sub"  class="btn btn-default" value="Submit">
+									 </center>
+							</form>
+			
+			</div>				
+							
 			<script>
 				function validate(){
 				var g;
