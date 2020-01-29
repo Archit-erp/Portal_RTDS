@@ -72,20 +72,20 @@
 							
 			<script>
 				function checkEmail(){
+					var flag;
 				jQuery.ajax({
 					url: "35.238.89.60/Portal_RTDS/register.php",
-					data: 'email='+$("#email").val()
+					data: 'email='+$("#email").val(),
+					data2: 'flag='+$("flag").val(1);
 					type : "POST",
 					success:function(data){
-					$("#statusCheck").html(data)
+					$("#statusCheck").html(data);
 				},
 					    error:function(){}
-				});}
-					
-					
-				
-				
+				});
 				}
+				}
+				
 				function validate(){
 				var g;
 				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
