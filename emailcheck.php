@@ -4,6 +4,7 @@ $username = "test_userr";
 $passwordd = "Password@123";        
 $dbname = "user";
 
+console.log(1);
 $conn = mysqli_connect($servername, $username, $passwordd, $dbname);
         // Check connection
         if ($conn->connect_error) {
@@ -11,7 +12,7 @@ $conn = mysqli_connect($servername, $username, $passwordd, $dbname);
                                     }
 else
 {
-console.log('1');
+console.log(2);
 (isset($_POST['email'])){
   $email=$_POST['email'];
   
