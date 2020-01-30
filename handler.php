@@ -10,7 +10,7 @@ public $gender=$_POST['gender'];
 public $mobile=$_POST['MobileNo'];
 public $password=$_POST['ConfirmPassword'];
 
-
+console.log("entry");
  $query = ("INSERT INTO user1 (firstname, lastname, email, age, mobile, gender, password) VALUES ('$firstname','$lastname','$email','$age','$mobile','$gender','$password')");
  $value = $db_handle->insertDB($query);
     if($value == True)
