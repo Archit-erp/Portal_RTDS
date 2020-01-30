@@ -11,7 +11,7 @@ $conn = mysqli_connect($servername, $username, $passwordd, $dbname);
                                     }
 else
 {
-
+console.log('1');
 (isset($_POST['email'])){
   $email=$_POST['email'];
   
