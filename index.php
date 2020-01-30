@@ -42,7 +42,7 @@
 									<div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus();" id="email"  name="Email" placeholder="Email" autocomplete="off" required></div>
 								</div>
 								
-								<div id="statusCheck"></div>
+								<span><img src = "2.gif" id = "loader"></span><div id="statusCheck"></div>
 								
 						
 								<div class="row">
@@ -76,7 +76,7 @@
 			<script>
 				function checkStatus()
 				{
-					$("#statusCheck").html(<span><img src = "2.gif" id = "loader">);
+					$("#loader").show();
 					var email=$('#email').val();
 					$.ajax({
 						
@@ -85,6 +85,7 @@
 					method : "POST",
 					success:function(response){
 					$("#statusCheck").html(response);
+					 $("#loader").hide();
 					
 				}});
 				
