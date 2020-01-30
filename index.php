@@ -74,6 +74,7 @@
 		</div>
 							
 			<script>
+				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 				function checkStatus()
 				{
 					$("#loader").show();
@@ -93,13 +94,14 @@
 				
 				
 				function emailvalidation(){
-				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				
 					var em = document.getElementById('email').value;
 					if(!em.match(filter))
-					{
-						alert ("Please Provide Valid Email ID");
+					{	
+						$response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
+						$("#statusCheck").html(response);
 						email.focus();
-						return false;
+						
 					}
 				
 				}
