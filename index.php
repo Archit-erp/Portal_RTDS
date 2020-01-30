@@ -72,7 +72,7 @@
 		</div>
 							
 			<script>
-				function checkEmail(){
+				/*function checkEmail(){
 					console.log('Enter');
 					var flag;
 				jQuery.ajax({
@@ -87,7 +87,7 @@
 				});
 				
 				console.log('exit');
-				}
+				} */
 				
 				function validate(){
 				var g;
