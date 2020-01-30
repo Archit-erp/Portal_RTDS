@@ -76,7 +76,7 @@
 				function checkStatus()
 				{
 					var email=$('#email').val();
-					jQuery.ajax({
+					$.ajax({
 						
 					url: "http://35.238.89.60/Portal_RTDS/emailcheck.php",
 					data: {email: email},
