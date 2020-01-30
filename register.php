@@ -20,6 +20,7 @@ if(empty($email || $password))
 }
 else if(!empty($flag))
 {
+    console.log(enter1);
     $conn = new mysqli($servername, $username, $passwordd, $dbname);
          $result = $conn->query("SELECT * FROM user1 WHERE email='".$email."'");
            $rowcount = $result->num_rows;
