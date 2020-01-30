@@ -15,7 +15,7 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
         {       $email=$_POST['email'];
          echo "$email";
                 echo "2";
-                if(isset($_POST['email']))
+                if(!isset($_POST['email']))
                 {
                                 $email=$_POST['email'];
 
