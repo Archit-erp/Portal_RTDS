@@ -9,33 +9,29 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
         // Check connection
         if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
-                
         }
       
-else
-{
-echo "2";
-(isset($_POST['email'])){
-  $email=$_POST['email'];
-  
-  $query= "select count(*) as CntUser from user1 where email='".$email."'";
-  $result = mysqli_query($conn,$query);
-  $response="<span style='color :green'>Available.</span>";
-        echo "here";
-    if(mysqli_num_rows($result)){
-    
-    $row=mysqli_fetch_array($result);
-    $count=$row['CntUser'];
-      if($count>0){
-      $response = "<span style='color :red;'>Not Available.</span>";
-       echo $response;
-      }
-    
-   
-    }
- 
- 
-}
+       else
+        {
+                echo "2";
+                if(isset($_POST['email']))
+                {
+                                $email=$_POST['email'];
 
+                                  $query= "select * FROM user1 where email='".$email."'";
+                                    $result = mysqli_query($this->conn,$query);
+                                      $rowcount=mysqli_num_rows($result);
+                                        
+                                        if(rowcount>0)
+                                          $response = "<span style='color :red;'>Not Available.</span>";
+                                        else
+                                         $response="<span style='color :green'>Available.</span>";
+                             
+               
+              
+                }
 
-?>
+                echo $response;
+            }
+
+ ?>
