@@ -5,6 +5,7 @@ $passwordd = "Password@123";
 $dbname = "user";
 
 console.log(1);
+echo "1";
 $conn = mysqli_connect($servername, $username, $passwordd, $dbname);
         // Check connection
         if ($conn->connect_error) {
