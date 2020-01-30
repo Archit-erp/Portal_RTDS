@@ -12,7 +12,7 @@ $conn =  mysqli_connect($servername, $username, $passwordd, $dbname);
                 echo "error in";
                                     }
                 echo "no error";
-/*else
+else
 {
 echo "2";
 (isset($_POST['email'])){
@@ -35,7 +35,7 @@ echo "2";
     }
  
  
-}*/
+}
 
 
 ?>
