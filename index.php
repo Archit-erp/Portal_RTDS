@@ -101,7 +101,6 @@
 						$response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
 						$("#statusCheck").html(response);
 						email.focus();
-						return ();
 						
 					}
 				
