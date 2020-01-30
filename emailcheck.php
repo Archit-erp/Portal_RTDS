@@ -5,14 +5,15 @@ $passwordd = "Password@123";
 $dbname = "user";
 
 
-$conn =  mysqli_connect($servername, $username, $passwordd, $dbname);
+$conn =  new mysqli($servername, $username, $passwordd, $dbname);
         // Check connection
         if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
-                echo "error in";
-                                    }
-                echo "no error";
-else
+                
+        }
+        echo "no error";
+               
+/*else
 {
 echo "2";
 (isset($_POST['email'])){
@@ -35,7 +36,7 @@ echo "2";
     }
  
  
-}
+}*/
 
 
 ?>
