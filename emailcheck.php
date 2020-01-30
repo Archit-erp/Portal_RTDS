@@ -10,9 +10,10 @@ $conn = mysqli_connect($servername, $username, $passwordd, $dbname);
         // Check connection
         if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
-                echo "error";
+                echo "error in";
                                     }
-else
+                echo "error out"
+/*else
 {
 echo "2";
 (isset($_POST['email'])){
@@ -35,7 +36,7 @@ echo "2";
     }
  
  
-}
+}*/
 
 
 ?>
