@@ -39,7 +39,7 @@
 									<div class="col-sm-12"><label>Email</label></div>
 								</div>
 								<div class="row">
-									<div class="col-sm-12" id="space"><input class="form-control" type="email" id="email" onBlur="checkEmail()" name="Email" placeholder="Email" required></div>
+									<div class="col-sm-12" id="space"><input class="form-control" type="email" id="email"  name="Email" placeholder="Email" required></div>
 								</div>
 								<div class="col-sm-2"><span id="statusCheck"></span></div>
 								
@@ -72,23 +72,6 @@
 		</div>
 							
 			<script>
-				/*function checkEmail(){
-					console.log('Enter');
-					var flag;
-				jQuery.ajax({
-					url: "register.php",
-					data: 'email='+$("#email").val(),
-					//data2: 'flag='+$("flag").val(1),
-					type : "POST",
-					success:function(data){
-					$("#statusCheck").html(data);
-				},
-					    error:function(){}
-				});
-				
-				console.log('exit');
-				} */
-				
 				function validate(){
 				var g;
 				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
