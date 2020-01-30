@@ -43,6 +43,7 @@
 								</div>
 								
 								<div id="statusCheck"></div>
+								<span><img src = "2.gif" id = "loader" style = "display:none"/></p>
 						
 								<div class="row">
 									<div class="col-sm-12"><label>Gender</label></div>
@@ -75,6 +76,7 @@
 			<script>
 				function checkStatus()
 				{
+					$("#loader").show();
 					var email=$('#email').val();
 					$.ajax({
 						
@@ -83,6 +85,7 @@
 					method : "POST",
 					success:function(response){
 					$("#statusCheck").html(response);
+					$("loader").hide();
 				}});
 				
 				}
