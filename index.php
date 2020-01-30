@@ -39,7 +39,7 @@
 									<div class="col-sm-12"><label>Email</label></div>
 								</div>
 								<div class="row">
-									<div class="col-sm-12" id="space"><input class="form-control" type="email" id="email"  name="Email" placeholder="Email" required></div>
+									<div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus()" id="email"  name="Email" placeholder="Email" required></div>
 								</div>
 								<div class="col-sm-2"><span id="statusCheck"></span></div>
 								
@@ -72,6 +72,23 @@
 		</div>
 							
 			<script>
+				function checkStatus()
+				{
+					var email=$('#email').val();
+					jQuery.ajax({
+					url: "handler.php",
+					data: {email: email},
+					type : "POST",
+					success:function(data){
+					$("#statusCheck").html(data);
+				}});
+				
+				console.log('exit');
+				} 
+				
+				
+				}
+				
 				function validate(){
 				var g;
 				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
