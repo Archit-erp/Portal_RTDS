@@ -43,7 +43,7 @@
 								</div>
 								
 								<div id="statusCheck"></div>
-								<span><img src = "2.gif" id = "loader" style = "display:none"/></p>
+								<span><img src = "2.gif" id = "loader" style = "display:none"></p>
 						
 								<div class="row">
 									<div class="col-sm-12"><label>Gender</label></div>
