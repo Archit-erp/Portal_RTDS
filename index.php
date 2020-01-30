@@ -84,8 +84,7 @@
 					$("#statusCheck").html(response);
 				}});
 				
-				console.log('exit');
-				} 
+				
 				
 				
 				
