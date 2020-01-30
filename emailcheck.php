@@ -25,10 +25,10 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
                                         if(rowcount>0){
                                           $response = "<span style='color :red;'>Not Available.</span>";
                                                 echo "Av"; }
-                                        else
+                                        else{
                                          $response="<span style='color :green'>Available.</span>";
-                             
-               
+                                                echo "av1";
+                                        }
               
                 }
 
