@@ -39,7 +39,7 @@
 									<div class="col-sm-12"><label>Email</label></div>
 								</div>
 								<div class="row">
-									<div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus();" id="email"  name="Email" placeholder="Email" autocomplete="off" required></div>
+									<div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus();" onblur="emailvalidation();" id="email"  name="Email" placeholder="Email" autocomplete="off" required></div>
 								</div>
 								
 								<span><img src = "2.gif" id = "loader" style="display:none;padding-left:5px,;height:20px;weight:10px"></span><div id="statusCheck"></div>
@@ -92,11 +92,20 @@
 				}
 				
 				
+				function emailvalidation(){
+				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+					var em = document.getElementById('email').value;
+					if(!em.match(filter))
+					{
+						alert ("Please Provide Valid Email ID");
+						email.focus();
+						return false;
+					}
 				
+				}
 				
 				function validate(){
 				var g;
-				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 				var phoneno = /^[6-9]\d{9}$/;
 				var blank =  /^\w+[a-zA-Z]*$/;
 				var regpass = /^.{4,20}$/;
@@ -129,7 +138,6 @@
 					
 					else if(!em.match(filter))
 					{
-						alert('Please Provide Valid Email ID');
 						email.focus();
 						return false;
 					}
