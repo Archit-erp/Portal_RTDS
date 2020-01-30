@@ -17,7 +17,7 @@
 				<h4 class="text-center" id="h2"> Fill out the form to signup.</h4>
 				<br>
 					
-							<form onsubmit="return validate();" method="post" action="register.php">
+							<form onsubmit="return validate();" method="post" action="handler.php">
 								<div class="row">
 									<div class="col-sm-6"><label>First Name</label></div>
 									<div class="col-sm-6"><label>Last Name</label></div>
