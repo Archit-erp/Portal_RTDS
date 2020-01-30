@@ -144,7 +144,7 @@
 						return false;
 					}
 					
-					else if(!regpass.match(pass))
+					else if(!regpass.match(p))
 					{
 						alert("Password minimum length(5 chars)");
 							pass.focus();
