@@ -77,9 +77,10 @@
 				{
 					var email=$('#email').val();
 					jQuery.ajax({
-					url: "emailcheck.php",
+						
+					url: "https://35.238.89.60/Portal_RTDS/emailcheck.php",
 					data: {email: email},
-					type : "POST",
+					method : "POST",
 					success:function(response){
 					$("#statusCheck").html(response);
 				}});
