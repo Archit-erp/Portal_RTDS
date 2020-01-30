@@ -1,5 +1,4 @@
 <?php
-
 $servername = "35.238.89.60";
 $username = "test_userr";
 $passwordd = "Password@123";        
@@ -12,14 +11,14 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
                 die("Connection failed: " . $conn->connect_error);
                 echo "error in";
                                     }
-                echo "error out"
+                echo "error out";
 /*else
 {
 echo "2";
 (isset($_POST['email'])){
   $email=$_POST['email'];
   
-  $query= "select count(*) as CntUser from users where email='".$email."'";
+  $query= "select count(*) as CntUser from user1 where email='".$email."'";
   $result = mysqli_query($conn,$query);
   $response="<span style='color :green'>Available.</span>";
         echo "here";
