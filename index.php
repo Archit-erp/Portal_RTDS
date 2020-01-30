@@ -77,7 +77,7 @@
 				{
 					var email=$('#email').val();
 					jQuery.ajax({
-					url: "handler.php",
+					url: "emailcheck.php",
 					data: {email: email},
 					type : "POST",
 					success:function(response){
