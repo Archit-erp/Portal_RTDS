@@ -39,7 +39,7 @@
 									<div class="col-sm-12"><label>Email</label></div>
 								</div>
 								<div class="row">
-									<div class="col-sm-12" id="space"><input class="form-control" type="email" onblur="checkStatus();" id="email"  name="Email" placeholder="Email" required></div>
+									<div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus();" id="email"  name="Email" placeholder="Email" required></div>
 								</div>
 								
 								<div id="statusCheck"></div>
