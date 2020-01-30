@@ -8,6 +8,7 @@ private $dbname = "user";
 private static $conn;
     
 function __construct(){
+    console.log('hello');
      $conn = new mysqli($servername, $username, $passwordd, $dbname);
             if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);)
