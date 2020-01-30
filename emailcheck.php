@@ -13,7 +13,7 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
       
        else
         {       $email=$_POST['email'];
-         echo "$email+"gddg"";
+         echo "$email";
                 echo "2";
                 if(isset($_POST['email']))
                 {
