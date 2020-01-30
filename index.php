@@ -42,7 +42,7 @@
 									<div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus()" id="email"  name="Email" placeholder="Email" required></div>
 								</div>
 								<div class="row">
-								</div class="col-sm-12" id="space"><span id="statusCheck"></span></div>
+								<span id="statusCheck"></span>
 								</div>
 								<div class="row">
 									<div class="col-sm-12"><label>Gender</label></div>
