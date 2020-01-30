@@ -85,7 +85,7 @@
 					method : "POST",
 					success:function(response){
 					$("#statusCheck").html(response);
-					$("$loader").hide();
+					$("#loader").hide();
 				}});
 				
 				}
