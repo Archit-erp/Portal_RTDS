@@ -11,9 +11,8 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
                 die("Connection failed: " . $conn->connect_error);
                 
         }
-        echo "no error";
-               
-/*else
+      
+else
 {
 echo "2";
 (isset($_POST['email'])){
@@ -36,7 +35,7 @@ echo "2";
     }
  
  
-}*/
+}
 
 
 ?>
