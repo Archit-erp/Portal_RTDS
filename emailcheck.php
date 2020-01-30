@@ -22,8 +22,9 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
                                     $result = mysqli_query($this->conn,$query);
                                       $rowcount=mysqli_num_rows($result);
                                         
-                                        if(rowcount>0)
+                                        if(rowcount>0){
                                           $response = "<span style='color :red;'>Not Available.</span>";
+                                                echo "Av" }
                                         else
                                          $response="<span style='color :green'>Available.</span>";
                              
