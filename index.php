@@ -84,7 +84,7 @@
 					$("#statusCheck").html(response);
 				}});
 				
-				
+				}
 				
 				
 				
