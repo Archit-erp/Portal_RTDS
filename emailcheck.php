@@ -19,6 +19,7 @@ console.log(2);
   $query= "select count(*) as CntUser from users where email='".$email."'";
   $result = mysqli_query($conn,$query);
   $response="<span style='color :green'>Available.</span>";
+        echo "here";
     if(mysqli_num_rows($result)){
     
     $row=mysqli_fetch_array($result);
