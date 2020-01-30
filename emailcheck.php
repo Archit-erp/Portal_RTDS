@@ -15,7 +15,7 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
         {       $email=$_POST['email'];
          echo "$email";
                 echo "2";
-                if(!isset($_POST['email']))
+                if(!empty($_POST['email']))
                 {
                                 $email=$_POST['email'];
 
@@ -24,10 +24,10 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
                                       $rowcount=mysqli_num_rows($result);
                                         
                                         if(rowcount>0){
-                                          $response = "<span style='color :red;'>Not Available.</span>";
+                                          $response = "<span style = 'color :red;'>Not Available.</span>";
                                                 echo "Av"; }
                                         else{
-                                         $response="<span style='color :green'>Available.</span>";
+                                         $response = "<span style = 'color :green'>Available.</span>";
                                                 echo "av1";
                                         }
               
