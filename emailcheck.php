@@ -1,12 +1,11 @@
 <?php
-echo "21";
+
 $servername = "35.238.89.60";
 $username = "test_userr";
 $passwordd = "Password@123";        
 $dbname = "user";
 
-console.log(1);
-echo "1";
+
 $conn = mysqli_connect($servername, $username, $passwordd, $dbname);
         // Check connection
         if ($conn->connect_error) {
@@ -14,7 +13,7 @@ $conn = mysqli_connect($servername, $username, $passwordd, $dbname);
                                     }
 else
 {
-console.log(2);
+echo "2";
 (isset($_POST['email'])){
   $email=$_POST['email'];
   
@@ -28,12 +27,13 @@ console.log(2);
     $count=$row['CntUser'];
       if($count>0){
       $response = "<span style='color :red;'>Not Available.</span>";
+       echo $response;
       }
     
-    
+   
     }
-  echo $response;
-  die;
+ 
+ 
 }
 
 
