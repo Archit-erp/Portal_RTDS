@@ -76,7 +76,7 @@
 			<script>
 				function checkStatus()
 				{
-					$("#statusCheck").html("<span><img src = "2.gif" id = "loader">");
+					$("#statusCheck").html(<span><img src = "2.gif" id = "loader">);
 					var email=$('#email').val();
 					$.ajax({
 						
