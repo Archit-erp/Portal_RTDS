@@ -30,13 +30,24 @@ else{
                                     }
         else
         {
-         $sql = ("INSERT INTO user1 (firstname, lastname, email, age, mobile, gender, password) VALUES ('$firstname','$lastname','$email','$age','$mobile','$gender','$password')");
+            $query= "select * FROM user1 where email='".$email."'";
+                $result = mysqli_query($conn,$query);
+                      $rowcount = mysqli_num_rows($result); 
+                
+                    if($rowcount>0)
+                    {
+                        echo "New Record created Succesfully";
+                    }
+            
+            
+        else{ 
+            $sql = ("INSERT INTO user1 (firstname, lastname, email, age, mobile, gender, password) VALUES ('$firstname','$lastname','$email','$age','$mobile','$gender','$password')");
             if (mysqli_query($conn, $sql)) {
                     echo "New record created successfully";
             }
             else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-            }
+            }}
 }}
 
 ?>
