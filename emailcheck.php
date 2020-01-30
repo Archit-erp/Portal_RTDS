@@ -19,7 +19,8 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
 
                                   $query= "select * FROM user1 where email='".$email."'";
                                     $result = mysqli_query($conn,$query);
-                                      $rowcount=mysqli_num_rows($result);
+                                      $rowcount = mysqli_num_rows($result);
+                                                echo "$rowcount";
                                         
                                         if(rowcount>0){
                                           $response = "<span style = 'color :red;'>Not Available.</span>";
