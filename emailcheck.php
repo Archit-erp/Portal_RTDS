@@ -20,7 +20,7 @@ $conn =  new mysqli($servername, $username, $passwordd, $dbname);
                                 $email=$_POST['email'];
 
                                   $query= "select * FROM user1 where email='".$email."'";
-                                    $result = mysqli_query($this->conn,$query);
+                                    $result = mysqli_query($conn,$query);
                                       $rowcount=mysqli_num_rows($result);
                                         
                                         if(rowcount>0){
