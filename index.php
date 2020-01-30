@@ -74,7 +74,7 @@
 		</div>
 							
 			<script>
-				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				
 				function checkStatus()
 				{
 					$("#loader").show();
@@ -94,13 +94,14 @@
 				
 				
 				function emailvalidation(){
-				
+				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 					var em = document.getElementById('email').value;
 					if(!em.match(filter))
 					{	
 						$response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
 						$("#statusCheck").html(response);
 						email.focus();
+						return ();
 						
 					}
 				
@@ -108,6 +109,7 @@
 				
 				function validate(){
 				var g;
+				var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 				var phoneno = /^[6-9]\d{9}$/;
 				var blank =  /^\w+[a-zA-Z]*$/;
 				var regpass = /^.{4,20}$/;
