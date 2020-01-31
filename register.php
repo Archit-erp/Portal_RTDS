@@ -1,17 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: archit.singhal
- * Date: 31-01-2020
- * Time: 12:13
- */<?php
-
 $servername = "35.238.89.60";
 $username = "test_userr";
 $passwordd = "Password@123";
 $dbname = "user";
-
-
 
 $firstname=$_POST['firstname'];
 $lastname=$_POST['Lastname'];
