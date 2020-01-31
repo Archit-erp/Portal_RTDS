@@ -138,7 +138,7 @@
 						return false;
 					}
 					
-					else if(!em.match(filter))
+					else if(!em.match(filter) || response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>")
 					{
 						alert('here');
 						email.focus();
