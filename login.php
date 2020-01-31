@@ -14,7 +14,7 @@
     <h1 class="text-center" id="h1"> LOGIN!</h1>
     <br>
 
-    <form onsubmit="return validate();" method="post" action="">
+    <form onsubmit="return validate();" method="post" action="loginDB.php">
 
         <div class="row">
             <div class="col-sm-12"><label>Email</label></div>
@@ -27,14 +27,14 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-4"><input class="form-control" type="password" id="pass" name="Password" placeholder="Password" required><br></div>
+            <div class="col-sm-4"><input class="form-control" type="password" id="pass" name="Password" placeholder="Password"><br></div>
         </div>
 
         <br>
         <center>
             <input type="submit" id="sub"  class="btn btn-default" value="Login">
         </center>
-        <h5>Not a member?<a href="index.php">Click to register</a></h5>
+        <h5>Not A Member?<a href="index.php">Click to register</a></h5>
     </form>
 </div>
 </div>
@@ -46,6 +46,8 @@
        var empty = /.{0}$/;
        var em = document.getElementById('email').value;
        var p = document.getElementById('pass').value;
+
+
        if(!em.match(filter)){
 
            alert("Please Enter Valid Email Address")
@@ -53,7 +55,7 @@
            return false;
        }
 
-       if( em.match(empty) || p.match(empty))
+       if( em == "" || p == "")
        {
            alert("Pleade Fill the Details completely!")
            pass.focus();
