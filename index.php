@@ -99,7 +99,7 @@
 					if(!em.match(filter))
 					{	
 						response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
-						var em1=document.getElementById('statusCheck').innerHTML = $response;
+						var em1=document.getElementById('statusCheck').innerHTML = response;
 						
 					}
 				
