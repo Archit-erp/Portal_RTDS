@@ -151,7 +151,6 @@
 
         else if(!em.match(filter) || f==1)
         {
-            alert('here');
             email.focus();
             return false;
         }
