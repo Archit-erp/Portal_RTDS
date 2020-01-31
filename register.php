@@ -36,7 +36,7 @@ else{
                 
                     if($rowcount>0)
                     {
-                        echo "New Record created Succesfully";
+                        echo "Email Already registered";
                     }
             
             
