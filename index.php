@@ -101,9 +101,6 @@
 						$response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
 						var em1=document.getElementById('statusCheck').innerHTML = $response;
 						
-						
-						email.focus();
-						
 					}
 				
 				}
