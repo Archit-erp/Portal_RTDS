@@ -50,7 +50,7 @@
 								</div>
 						  
 								<div class="row">
-										<input class="marg" type="radio" id="r1" name="gender" value="male" checked> Male<br>
+										<input class="marg" type="radio" id="r1" name="gender" value="male"> Male<br>
 										<input class="marg" type="radio" id="r2" name="gender" value="female"> Female<br>
 										<input class="marg" id="space" type="radio" id="r3" name="gender" value="other"> Other 
 								</div>
