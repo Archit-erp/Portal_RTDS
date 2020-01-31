@@ -99,7 +99,9 @@
 					if(!em.match(filter))
 					{	
 						$response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
-						$("#statusCheck").html(response);
+						var em1=document.getElementById('statusCheck').innerHTML = '$response';
+						
+						
 						email.focus();
 						
 					}
@@ -141,6 +143,7 @@
 					
 					else if(!em.match(filter))
 					{
+						
 						email.focus();
 						return false;
 					}
