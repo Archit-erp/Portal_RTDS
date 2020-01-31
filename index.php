@@ -68,9 +68,8 @@
         <center>
             <input type="submit" id="sub"  class="btn btn-default" value="Submit">
         </center>
+        <h5>Already Signed Up. <a href="login.php">Click to Login</a></h5>
     </form>
-
-
 </div>
 
 <script>
@@ -92,7 +91,7 @@
                     $("#statusCheck").html("<span style = 'color :red'>Email Already Registered.</span>");
                     $("#loader").hide();
                 }
-                
+
                 else{
                     f=0;
                     $("#statusCheck").html("<span style = 'color :green'>Available.</span>");
