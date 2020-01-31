@@ -1,32 +1,33 @@
 
 .container{
-border-style :solid;
-border-width : 2px;
-border-color : #979A9A ;
-margin: 40px 900px 0 400px;
-border-radius : 13px;
-padding-bottom : 70px;
-box-shadow: 5px 10px:
+    border-style :solid;
+    border-width : 2px;
+    border-color : #979A9A ;
+    margin: 40px 900px 0 400px;
+    border-radius : 13px;
+    padding-bottom : 70px;
+    box-shadow: 5px 10px:
 }
 @font-face {
-  font-family: Nunito;
-  src: url(Nunito-Italic.ttf);
+    font-family: Nunito;
+    src: url(Nunito-Italic.ttf);
 }
 @font-face {
-  font-family: Poppins;
-  src: url(Poppins-SemiBold.otf);
+    font-family: Poppins;
+    src: url(Poppins-SemiBold.otf);
 }
 
 #space{
-	margin-bottom : 10px;;
+    margin-bottom : 10px;;
 }
 #h1{
-	
-	font-size : 45px;
-	font-family : Poppins;
+
+    font-size : 45px;
+    font-family : Poppins;
 }
 #h2{
-	
-	font-size : 25px;
-	font-family : Nunito;
+
+    font-size : 25px;
+    font-family : Nunito;
 }
+
