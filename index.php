@@ -74,7 +74,7 @@
 		</div>
 							
 			<script>
-				
+				var response;
 				function checkStatus()
 				{
 					$("#loader").show();
@@ -98,7 +98,7 @@
 					var em = document.getElementById('email').value;
 					if(!em.match(filter))
 					{	
-						$response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
+						response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
 						var em1=document.getElementById('statusCheck').innerHTML = $response;
 						
 					}
