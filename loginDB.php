@@ -4,11 +4,13 @@ $username = "test_userr";
 $passwordd = "Password@123";
 $dbname = "user";
 
-console.log('here');
+console.log('here0');
+
 session_start();
 $email = $_POST['Email'];
 $password = $_POST['Password'];
-console.log('here1');
+
+console.log('here0_1');
 
 
 $conn = new mysqli($servername, $username, $passwordd, $dbname);
@@ -23,11 +25,12 @@ else{
 
     if(mysqli_num_rows($result)>0)
     {
-        echo 'here';
+        echo "here";
         header("Location : http://35.238.89.60/Portal_RTDS/Dashboard.php");
     }
 
     else{
+        echo "here1";
         header("Location : http://35.238.89.60/Portal_RTDS/login.php");
     }
 }
