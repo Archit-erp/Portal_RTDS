@@ -1,3 +1,7 @@
+<?php
+include 'sessioncheck.php'
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -60,7 +64,7 @@
 
         if( em == "" || p == "")
         {
-            alert("Pleade Fill the Details completely!");
+            alert("Please Fill the Details Completely!");
             pass.focus();
             return false;
         }
