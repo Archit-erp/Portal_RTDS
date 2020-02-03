@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<html>
 <head>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,6 +43,7 @@
 <script>
 
   function validate(){
+      
        var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
        var em = document.getElementById('email').value;
        var p = document.getElementById('pass').value;
