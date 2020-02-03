@@ -18,7 +18,7 @@ else{
     $query = "SELECT email, password FROM user1 WHERE username = '".$email."' AND password = '".$password."'";
     $result = mysqli_query($conn,$query);
 
-    if(mysqli_num_rows($reuslt)>0)
+    if(mysqli_num_rows($result)>0)
     {
         echo 'Succesfull, Login';
     }
