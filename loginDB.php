@@ -14,14 +14,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 else{
-    $_SESSION['user_id']= $email;
-    $_SESSION['pass'] = $password;
+   
     $query = "SELECT email, password FROM user1 WHERE email = '".$email."' AND password = '".$password."'";
     $result = mysqli_query($conn,$query);
+    $rowcount = mysqli_num_rows($result);
 
-    if(mysqli_num_rows($result)>0)
+    if($rowcount>0)
     {
-
+        $_SESSION['user_id']= $email;
+        $_SESSION['pass'] = $password;
         $response = 1;
     }
 
@@ -29,7 +30,7 @@ else{
 
         $response = 0;
     }
-    
+
     echo $response;
 }
 
