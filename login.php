@@ -76,6 +76,7 @@ include 'sessioncheck.php'
 
             $.ajax({
                 url : "loginDB.php",
+                cache: false,
                 data : {email : email , password : pass},
                 method : "POST",
                 success:function(response){
