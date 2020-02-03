@@ -6,7 +6,7 @@ $dbname = "user";
 
 echo 'here0';
 
-session_start();
+//session_start();
 $email = $_POST['Email'];
 $password = $_POST['Password'];
 
@@ -19,7 +19,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 else{
-    $_SESSION['user_id']= $email;
+   // $_SESSION['user_id']= $email;
     $query = "SELECT email, password FROM user1 WHERE username = '".$email."' AND password = '".$password."'";
     $result = mysqli_query($conn,$query);
 
