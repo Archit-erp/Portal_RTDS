@@ -14,7 +14,7 @@
     <h1 class="text-center" id="h1"> LOGIN!</h1>
     <br>
 
-    <form onsubmit="return validate();" method="post" action="Dashboard.php">
+    <form onsubmit = "return validate();" method = "post" action = "Dashboard.php">
 
         <div class="row">
             <div class="col-sm-12"><label>Email</label></div>
@@ -37,7 +37,7 @@
         <h5>Not A Member?<a href="index.php"> Click to register</a></h5>
     </form>
 </div>
-</div>
+
 
 <script>
 
