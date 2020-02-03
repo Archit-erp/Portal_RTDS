@@ -32,7 +32,7 @@
 
         <br>
         <center>
-            <input type="submit" id="sub"  class="btn btn-default" value="Login">
+            <input type="submit" id="sub"  class="btn btn-default" value="Submit">
         </center>
         <h5>Not A Member?<a href="index.php"> Click to register</a></h5>
     </form>
