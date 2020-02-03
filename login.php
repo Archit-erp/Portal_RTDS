@@ -43,17 +43,16 @@
 
    function validate(){
        var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-       var empty = /.{0}$/;
        var email = document.getElementById('email').value;
        var password = document.getElementById('pass').value;
 
 
-       if(!em.match(filter)){
+     /*  if(!em.match(filter)){
 
            alert("Please Enter Valid Email Address")
            email.focus();
            return false;
-       }
+       }*/
 
        if( em == "" || p == "")
        {
