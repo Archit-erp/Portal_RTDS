@@ -66,7 +66,7 @@
         }
 
         else{
-            var response;
+            var response = 0;
             var email = $('#email').val();
             var pass = $('#pass').val();
 
