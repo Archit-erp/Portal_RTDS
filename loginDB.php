@@ -29,6 +29,8 @@ else{
 
         $response = 0;
     }
+    
+    echo $response;
 }
 
 ?>
