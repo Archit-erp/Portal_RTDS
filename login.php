@@ -15,7 +15,7 @@
     <h1 class="text-center" id="h1"> LOGIN!</h1>
     <br>
 
-    <form method = "post" onsubmit="return validate();" action = "Dashboard.php">
+    <form method = "post" onsubmit="validate();" action = "Dashboard.php">
 
         <div class="row">
             <div class="col-sm-12"><label>Email</label></div>
@@ -52,7 +52,7 @@
 
 
         /*  if(!em.match(filter)){
-   
+
               alert("Please Enter Valid Email Address")
               email.focus();
               return false;
@@ -69,7 +69,7 @@
             var response;
             $.ajax({
                 url : "loginDB.php"
-                data : {email : em, password : p},
+                data : {email : "em" , password : "p"},
                 method : "POST",
                 success:function(response){
                     if(response == 1)
