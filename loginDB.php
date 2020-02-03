@@ -3,6 +3,7 @@ $servername = "35.238.89.60";
 $username = "test_userr";
 $passwordd = "Password@123";
 $dbname = "user";
+
 console.log('here');
 session_start();
 $email = $_POST['Email'];
@@ -22,7 +23,7 @@ else{
 
     if(mysqli_num_rows($result)>0)
     {
-        
+        echo 'here';
         header("Location : http://35.238.89.60/Portal_RTDS/Dashboard.php");
     }
 
