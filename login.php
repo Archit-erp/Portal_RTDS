@@ -14,7 +14,7 @@
     <h1 class="text-center" id="h1"> LOGIN!</h1>
     <br>
 
-    <form onsubmit="return validate();" method="post" action="loginDB.php">
+    <form onsubmit="return validate();" method="post" action="Dashboard.php">
 
         <div class="row">
             <div class="col-sm-12"><label>Email</label></div>
@@ -44,8 +44,8 @@
    function validate(){
        var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
        var empty = /.{0}$/;
-       var em = document.getElementById('email').value;
-       var p = document.getElementById('pass').value;
+       var email = document.getElementById('email').value;
+       var password = document.getElementById('pass').value;
 
 
        if(!em.match(filter)){
@@ -60,6 +60,30 @@
            alert("Pleade Fill the Details completely!")
            pass.focus();
            return false;
+       }
+
+       else{
+
+           $.ajax({
+               url : "loginDB.php"
+               data : {email : email, password : password},
+               method : "POST",
+               success:function(response){
+                   if(response == 1)
+                   {
+                       return true;
+                   }
+
+                   else
+                   {
+                       alert('Wrong credentials');
+                       return false;
+
+                   }
+
+               }
+           })
+
        }
 
    }
