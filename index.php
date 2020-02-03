@@ -87,7 +87,7 @@
             method : "POST",
             success:function(response){
                 if(response == 1) {
-                    f=1
+                    f=1;
                     $("#statusCheck").html("<span style = 'color :red'>Email Already Registered.</span>");
                     $("#loader").hide();
                 }
@@ -127,7 +127,7 @@
         var ln = document.getElementById('lname').value;
         var em = document.getElementById('email').value;
         var ag = document.getElementById('Age').value;
-        var mob1 =  document.getElementById('mob').value;
+        var mob1 = document.getElementById('mob').value;
         var p = document.getElementById('pass').value;
         var cp = document.getElementById('cpass').value;
         {
@@ -172,7 +172,7 @@
         {
             alert("Password minimum length(5 chars)");
             pass.focus();
-            return true;
+            return false;
 
         }
 
