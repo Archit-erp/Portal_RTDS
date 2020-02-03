@@ -66,7 +66,7 @@
         }
 
         else{
-            var response = 0;
+
             var email = $('#email').val();
             var pass = $('#pass').val();
 
@@ -80,7 +80,7 @@
                         return true;
                     }
 
-                    else
+                    else if(response == 0)
                     {
                         alert('Wrong credentials');
                         return false;
