@@ -15,7 +15,7 @@
     <h1 class="text-center" id="h1"> LOGIN!</h1>
     <br>
 
-    <form method = "post" onsubmit="validate();" action = "Dashboard.php">
+    <form method = "post" onsubmit=" return validate();" action = "Dashboard.php">
 
         <div class="row">
             <div class="col-sm-12"><label>Email</label></div>
