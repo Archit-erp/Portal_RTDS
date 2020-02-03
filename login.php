@@ -15,7 +15,7 @@
     <h1 class="text-center" id="h1"> LOGIN!</h1>
     <br>
 
-    <form onsubmit = "return validate();" method = "post" action = "Dashboard.php">
+    <form method = "post" onsubmit="validate();" action = "Dashboard.php">
 
         <div class="row">
             <div class="col-sm-12"><label>Email</label></div>
@@ -43,7 +43,7 @@
 <script>
 
   function validate(){
-      
+
        var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
        var em = document.getElementById('email').value;
        var p = document.getElementById('pass').value;
@@ -64,6 +64,7 @@
        }
 
        else{
+           var response;
            $.ajax({
                url : "loginDB.php"
                data : {email : em, password : p},
