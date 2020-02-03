@@ -24,11 +24,14 @@ else{
         session_start();
         $_SESSION['user_id']= $email;
         $_SESSION['pass'] = $password;
-
+        
+        echo "here1";
         $response = 1;
     }
 
     else{
+        
+            echo "here12";
 
         $response = 0;
     }
