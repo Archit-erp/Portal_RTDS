@@ -67,9 +67,12 @@
 
         else{
             var response;
+            var email = $('#email').val();
+            var pass = $('#pass').val();
+            
             $.ajax({
                 url : "loginDB.php"
-                data : {email : "em" , password : "p"},
+                data : {email : email , password : pass},
                 method : "POST",
                 success:function(response){
                     if(response == 1)
