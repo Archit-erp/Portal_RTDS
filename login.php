@@ -34,7 +34,7 @@
         <center>
             <input type="submit" id="sub"  class="btn btn-default" value="Login">
         </center>
-        <h5>Not A Member?<a href="index.php">Click to register</a></h5>
+        <h5>Not A Member?<a href="index.php"> Click to register</a></h5>
     </form>
 </div>
 </div>
@@ -43,8 +43,8 @@
 
    function validate(){
        var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-       var email = document.getElementById('email').value;
-       var password = document.getElementById('pass').value;
+       var em = document.getElementById('email').value;
+       var p = document.getElementById('pass').value;
 
 
      /*  if(!em.match(filter)){
@@ -64,7 +64,7 @@
        else{
            $.ajax({
                url : "loginDB.php"
-               data : {email : email, password : password},
+               data : {email : em, password : p},
                method : "POST",
                success:function(response){
                    if(response == 1)
