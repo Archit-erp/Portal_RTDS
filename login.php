@@ -40,57 +40,58 @@
 </div>
 
 
+
+</body>
 <script>
 
-  function validate(){
+    function validate(){
 
-       var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-       var em = document.getElementById('email').value;
-       var p = document.getElementById('pass').value;
+        var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var em = document.getElementById('email').value;
+        var p = document.getElementById('pass').value;
 
 
-     /*  if(!em.match(filter)){
+        /*  if(!em.match(filter)){
+   
+              alert("Please Enter Valid Email Address")
+              email.focus();
+              return false;
+          }*/
 
-           alert("Please Enter Valid Email Address")
-           email.focus();
-           return false;
-       }*/
+        if( em == "" || p == "")
+        {
+            alert("Pleade Fill the Details completely!")
+            pass.focus();
+            return false;
+        }
 
-       if( em == "" || p == "")
-       {
-           alert("Pleade Fill the Details completely!")
-           pass.focus();
-           return false;
-       }
+        else{
+            var response;
+            $.ajax({
+                url : "loginDB.php"
+                data : {email : em, password : p},
+                method : "POST",
+                success:function(response){
+                    if(response == 1)
+                    {
+                        return true;
+                    }
 
-       else{
-           var response;
-           $.ajax({
-               url : "loginDB.php"
-               data : {email : em, password : p},
-               method : "POST",
-               success:function(response){
-                   if(response == 1)
-                   {
-                       return true;
-                   }
+                    else
+                    {
+                        alert('Wrong credentials');
+                        return false;
 
-                   else
-                   {
-                       alert('Wrong credentials');
-                       return false;
+                    }
 
-                   }
+                }
+            })
 
-               }
-           })
+        }
 
-       }
-
-   }
+    }
 
 
 
 </script>
-</body>
 </html>
