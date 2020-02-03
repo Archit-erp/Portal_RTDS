@@ -4,13 +4,13 @@ $username = "test_userr";
 $passwordd = "Password@123";
 $dbname = "user";
 
-console.log('here0');
+echo 'here0';
 
 session_start();
 $email = $_POST['Email'];
 $password = $_POST['Password'];
 
-console.log('here0_1');
+echo 'here0_1';
 
 
 $conn = new mysqli($servername, $username, $passwordd, $dbname);
