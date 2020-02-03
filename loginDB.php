@@ -4,47 +4,32 @@ $username = "test_userr";
 $passwordd = "Password@123";
 $dbname = "user";
 
-$firstname=$_POST['firstname'];
-$lastname=$_POST['Lastname'];
-$email=$_POST['Email'];
-$age=$_POST['age'];
-$gender=$_POST['gender'];
-$mobile=$_POST['MobileNo'];
-$password=$_POST['ConfirmPassword'];
 
 
+//session_start();
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-if(empty($email || $password))
-{
-    header("Location: http://35.238.89.60/Portal_RTDS/index.php");
+$conn = new mysqli($servername, $username, $passwordd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 else{
-// Create connection
-    $conn = new mysqli($servername, $username, $passwordd, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    else
+    // $_SESSION['user_id']= $email;
+    $query = "SELECT email, password FROM user1 WHERE email = '".$email."' AND password = '".$password."'";
+    $result = mysqli_query($conn,$query);
+
+    if(mysqli_num_rows($result)>0)
     {
-        $query= "select * FROM user1 where email='".$email."'";
-        $result = mysqli_query($conn,$query);
-        $rowcount = mysqli_num_rows($result);
+        echo "here";
+        $response = 1;
+    }
 
-        if($rowcount>0)
-        {
-            header("Location: http://35.238.89.60/Portal_RTDS/index.php");
-        }
-
-
-        else{
-            $sql = ("INSERT INTO user1 (firstname, lastname, email, age, mobile, gender, password) VALUES ('$firstname','$lastname','$email','$age','$mobile','$gender','$password')");
-            if (mysqli_query($conn, $sql)) {
-                echo "New record created successfully";
-            }
-            else {
-                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-            }}
-    }}
+    else{
+        echo "here1";
+        $response = 0;
+    }
+}
 
 ?>
