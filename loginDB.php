@@ -22,12 +22,12 @@ else{
 
     if(mysqli_num_rows($result)>0)
     {
-        echo "here";
+       // echo "here";
         $response = 1;
     }
 
     else{
-        echo "here1";
+        //echo "here1";
         $response = 0;
     }
 }
