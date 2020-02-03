@@ -33,7 +33,7 @@ else{
 
         if($rowcount>0)
         {
-            echo "Email Already registered";
+            header("Location: http://35.238.89.60/Portal_RTDS/index.php");
         }
 
 
