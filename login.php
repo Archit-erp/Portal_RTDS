@@ -60,7 +60,7 @@
 
         if( em == "" || p == "")
         {
-            alert("Pleade Fill the Details completely!")
+            alert("Pleade Fill the Details completely!");
             pass.focus();
             return false;
         }
