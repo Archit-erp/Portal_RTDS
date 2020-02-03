@@ -42,7 +42,7 @@
             <div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus();" onblur="emailvalidation();" id="email"  name="Email" placeholder="Email" autocomplete="off" required></div>
         </div>
 
-        <span><img src = "2.gif" id = "loader" style="display:none;padding-left:5px,;height:20px;weight:10px"></span><div id="statusCheck"></div>
+        <span><img src = "2.gif" id = "loader" style="display:none;padding-left:5px ;height:20px;weight:10px"></span><div id="statusCheck"></div>
 
 
         <div class="row">
