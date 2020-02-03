@@ -41,7 +41,7 @@
 
 <script>
 
-   function validate(){
+  function validate(){
        var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
        var em = document.getElementById('email').value;
        var p = document.getElementById('pass').value;
