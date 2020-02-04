@@ -111,7 +111,12 @@
     function emailvalidation(){
         var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         var em = document.getElementById('email').value;
-        if(!em.match(filter))
+        if(em == "")
+        { 
+           response = "<span style = 'color :red'></span>";
+            var em1=document.getElementById('statusCheck').innerHTML = response; 
+        }
+        else if (!em.match(filter))
         {
             response = "<span style = 'color :red'>Please Provide Valid Email Address.</span>";
             var em1=document.getElementById('statusCheck').innerHTML = response;
