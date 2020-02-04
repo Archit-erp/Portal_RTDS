@@ -15,14 +15,13 @@ include 'sessioncheck.php';
 <body>
 
 
-<button type="button" onclick="sessiondes()">Logout</button>
+<button onclick="sessiondes()">Logout</button>
 
 <script>
     function sessiondes() {
-      
+        <?php
         session_unset();
           session_destroy();
-
-       
-    }
+        ?>
+        }
 </script>
