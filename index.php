@@ -33,7 +33,7 @@
         </div>
         <div class="row">
             <div class="col-sm-6" id="space"><input class="form-control" type="number" id="Age" name="age" min="18" max="60" placeholder="Age" required></div>
-            <div class="col-sm-6" id="space"><input class="form-control" type="number" id="mob" name="MobileNo" maxlength="10" placeholder="Mobile No" required></div>
+            <div class="col-sm-6" id="space"><input class="form-control" type="number" id="mob" min="7000000000" max="9999999999" name="MobileNo" maxlength="10" placeholder="Mobile No" required></div>
         </div>
         <div class="row">
             <div class="col-sm-12"><label>Email</label></div>
