@@ -32,14 +32,14 @@
             <div class="col-sm-6"  ><label>Mobile</label></div>
         </div>
         <div class="row">
-            <div class="col-sm-6" id="space"><input class="form-control" type="number" id="Age" name="age" placeholder="Age" required></div>
+            <div class="col-sm-6" id="space"><input class="form-control" type="number" id="Age" name="age" min="18" max="60" placeholder="Age" required></div>
             <div class="col-sm-6" id="space"><input class="form-control" type="text" id="mob" name="MobileNo" maxlength="10" placeholder="Mobile No" required></div>
         </div>
         <div class="row">
             <div class="col-sm-12"><label>Email</label></div>
         </div>
         <div class="row">
-            <div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus();" onblur="emailvalidation();" id="email"  name="Email" placeholder="Email" autocomplete="off" required></div>
+            <div class="col-sm-12" id="space"><input class="form-control" type="email" onkeyup="checkStatus();" onblur="emailvalidation();" id="email"  name="Email" placeholder="Email" autocomplete="off"></div>
         </div>
 
         <span><img src = "2.gif" id = "loader" style="display:none;padding-left:5px ;height:20px;weight:10px"></span><div id="statusCheck"></div>
