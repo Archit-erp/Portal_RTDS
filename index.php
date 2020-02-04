@@ -82,6 +82,7 @@
         
      if(email == "")
      {
+         $("#loader").hide();
          $("#statusCheck").html("<span style = 'color :red'></span>");
      }
      else   {  $.ajax({
