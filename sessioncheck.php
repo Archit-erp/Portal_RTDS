@@ -1,13 +1,10 @@
 <?php
 session_start();
-if(empty($_SESSION['user_id'])){
+if(!empty($_SESSION['user_id'])){
+        $f = 0;
 
-    header("Location: http://35.238.89.60/Portal_RTDS/login.php");
-    
-    
 }
 else{
-echo $_SESSION['user_id'];
-     header("Location: http://35.238.89.60/Portal_RTDS/Dashboard.php");
+$f = 1;
 }
 ?>
