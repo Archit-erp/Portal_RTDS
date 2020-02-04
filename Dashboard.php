@@ -13,18 +13,23 @@ include 'sessioncheck.php';
 </head>
 <body>
 
-
-<button type="button" onclick="sessiondes()">Logout</button>
-
+<div>
+<button type="button" onclick ="sessiondes()">Logout</button>
+</div>
 
 <script>
     function sessiondes() {
-        <?php
-        //session_unset();
-        session_destroy();
-        ?>
+        $.ajax({
+            url : "sessiondestroy.php",
+            method : "POST",
+            success:function(data){
+
+                header("Location: http://35.238.89.60/Portal_RTDS/login.php");
+            }
+        })
     }
 
 </script>
 </body>
+
 </html>
