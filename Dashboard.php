@@ -1,4 +1,4 @@
-<? 
+<?php
 include 'sessioncheck.php';
 if($f == 0)
      header("Location: http://35.238.89.60/Portal_RTDS/Login.php");
