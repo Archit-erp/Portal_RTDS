@@ -20,8 +20,10 @@ echo $_SESSION['user_id'];
 
 <script>
     function sessiondes() {
+        $flag =1;
         $.ajax({
-            url : "sessiondestroy.php",
+            url : "sessioncheck.php",
+            data : {f : flag},
             method : "POST",
             success:function(response){
                console.log ('logging out');
