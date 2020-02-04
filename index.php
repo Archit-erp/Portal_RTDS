@@ -82,8 +82,8 @@
         
         if(email == "")
         {
-         $("#loader").hide();
-         $("#statusCheck").html("<span style = 'color :red'></span>");
+        $("#statusCheck").html("<span></span>");
+        $("#loader").hide();
         }
 
         { $.ajax({
