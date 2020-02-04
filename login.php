@@ -1,6 +1,5 @@
 <?php
-//include 'sessioncheck.php';
-session_destroy();
+include 'sessioncheck.php';
 ?>
 
 <!DOCTYPE HTML>
