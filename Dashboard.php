@@ -5,6 +5,7 @@ if(empty($_SESSION['user_id'])){
     header("Location : http://35.238.89.60/Portal_RTDS/login.php");
 }
 print_r($_SESSION);
+echo count($_SESSION);
 echo $_SESSION['user_id'];
 ?>
 <!DOCTYPE HTML>
