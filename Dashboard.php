@@ -20,10 +20,8 @@ include 'sessioncheck.php';
 <script>
     function sessiondes() {
         $.ajax({
-            url : "sessiondestroy.php",
-            method : "POST",
+            url : "sessiondestroy.php"
             success:function(data){
-
                 header("Location: http://35.238.89.60/Portal_RTDS/login.php");
             }
         })
