@@ -20,7 +20,7 @@ echo $_SESSION['user_id'];
 
 <script>
     function sessiondes() {
-        $flag =1;
+        var flag =1;
         $.ajax({
             url : "sessioncheck.php",
             data : {f : flag},
