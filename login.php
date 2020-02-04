@@ -1,6 +1,6 @@
-/*<?php
-include 'sessioncheck.php';
-?>*/
+<?php
+//include 'sessioncheck.php';
+?>
 
 <!DOCTYPE HTML>
 <html>
