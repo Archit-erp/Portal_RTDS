@@ -19,10 +19,10 @@ include 'sessioncheck.php';
 
 <script>
     function sessiondes() {
-        <?php
+      
         session_unset();
           session_destroy();
 
-        ?>
+       
     }
 </script>
