@@ -1,5 +1,6 @@
 <?php
 echo $_SESSION['user_id']; 
+echo $_SESSION;
 //include 'sessioncheck.php';
 ?>
 
