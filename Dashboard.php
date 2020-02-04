@@ -17,11 +17,18 @@ include 'sessioncheck.php';
 
 <button onclick="sessiondes()">Logout</button>
 
+</body>
 <script>
     function sessiondes() {
         <?php
-        session_unset();
-          session_destroy();
+            session_unset();
+            session_destroy();
         ?>
-        }
+    }
+    
 </script>
+
+
+
+
+</html>
