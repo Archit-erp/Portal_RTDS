@@ -25,7 +25,7 @@ echo $_SESSION['user_id'];
             url : "sessiondestroy.php",
             method : "POST",
             success:function(response){
-               location('http://35.238.89.60/Portal_RTDS/login.php');
+               location.replace('http://35.238.89.60/Portal_RTDS/login.php');
             }
         })
     }
