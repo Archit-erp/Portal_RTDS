@@ -164,6 +164,7 @@
         else if(!em.match(filter) || f==1)
         {
             email.focus();
+            alert("Please Enter the Email");
             return false;
         }
 
