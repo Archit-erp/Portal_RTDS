@@ -15,9 +15,9 @@ include 'sessioncheck.php';
 <body>
 
 
-<button onclick="sessiondes()">Logout</button>
+<button type="button" onclick="sessiondes()">Logout</button>
 
-</body>
+
 <script>
     function sessiondes() {
         <?php
@@ -26,9 +26,7 @@ include 'sessioncheck.php';
         ?>
     }
     
+    
+</body>
 </script>
-
-
-
-
 </html>
