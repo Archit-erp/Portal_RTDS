@@ -27,14 +27,14 @@ if($f == 1)
             <div class="col-sm-12"><label>Email</label></div>
         </div>
         <div class="row">
-            <div class="col-sm-4" id="space"><input class="form-control" type="email" id="email"  name="Email" placeholder="Email"></div>
+            <div class="col-sm-12" id="space"><input class="form-control" type="email" id="email"  name="Email" placeholder="Email"></div>
         </div>
         <div class="row">
-            <div class="col-sm-4"><label>Password</label></div>
+            <div class="col-sm-12"><label>Password</label></div>
         </div>
 
         <div class="row">
-            <div class="col-sm-4"><input class="form-control" type="password" id="pass" name="Password" placeholder="Password"><br></div>
+            <div class="col-sm-12"><input class="form-control" type="password" id="pass" name="Password" placeholder="Password"><br></div>
         </div>
 
         <br>
