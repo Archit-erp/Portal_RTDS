@@ -1,15 +1,7 @@
 <?php
-//include 'sessioncheck.php';
-session_start();
-if(empty($_SESSION['user_id'])){
-    try{
-    header("Location : http://35.238.89.60/Portal_RTDS/login.php");
-    } catch (\Exception $e){
-    echo "hahahahahaha";
-    }
-    echo "greeg";exit;
-}
+include 'sessioncheck.php';
 ?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
