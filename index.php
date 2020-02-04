@@ -80,13 +80,11 @@
         $("#loader").show();
         var email=$('#email').val();
         
-        if(email == "")
-        {
-        $("#statusCheck").html("<span></span>");
-        $("#loader").hide();
-        }
-
-        { $.ajax({
+     if(email == "")
+     {
+         $("#statusCheck").html("<span style = 'color :red'></span>");
+     }
+     else   {  $.ajax({
 
             url: "emailcheck.php",
             data: {email: email},
