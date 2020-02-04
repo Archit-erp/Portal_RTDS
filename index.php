@@ -83,7 +83,7 @@
         if(email == "")
         {
          $("#loader").hide();
-          $("#statusCheck").html();
+         $("#statusCheck").html("<span style = 'color :red'></span>");
         }
 
         { $.ajax({
