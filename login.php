@@ -1,5 +1,6 @@
 <?php
 //include 'sessioncheck.php';
+session_destroy();
 ?>
 
 <!DOCTYPE HTML>
