@@ -1,5 +1,6 @@
 <?php
 include 'sessioncheck.php';
+echo $_SESSION['user_id'];
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -21,7 +22,10 @@ include 'sessioncheck.php';
     function sessiondes() {
         $.ajax({
             url : "sessiondestroy.php",
-            success:function(response){}
+            method : "POST",
+            success:function(response){
+                header("Location: http://35.238.89.60/Portal_RTDS/login.php");
+            }
         })
     }
 
