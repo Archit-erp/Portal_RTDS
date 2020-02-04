@@ -79,8 +79,14 @@
     {
         $("#loader").show();
         var email=$('#email').val();
+        
+        if(email == "")
+        {
+         $("#loader").hide();
+          $("#statusCheck").html();
+        }
 
-        $.ajax({
+        { $.ajax({
 
             url: "emailcheck.php",
             data: {email: email},
@@ -98,7 +104,7 @@
                     $("#loader").hide();
                 }
             }
-        });
+        });}
 
     }
 
